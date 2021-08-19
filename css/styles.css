@@ -1,0 +1,23 @@
+.center {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3%;  
+}
+
+.linkedin{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3%; 
+
+}
+
+.profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13%; 
+}
