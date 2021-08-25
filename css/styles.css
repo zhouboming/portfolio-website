@@ -83,7 +83,7 @@ a:hover {
 
 .ResumeButton {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #c5a94f;
+  background-color: #e2d197;
   color: #222020; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -95,4 +95,16 @@ a:hover {
 .ResumeButton:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.EmailButton {
+  background-color: transparent;
+  color: #3d3b3a;
+  text-transform: uppercase;
+  border: 2px solid #c5a94f;
+}
+
+.EmailButton:hover {
+  background-color: #998249;
+  color: #ffffff;
 }
