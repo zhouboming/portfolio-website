@@ -26,8 +26,6 @@
 .homeheader{
   font-weight: 500;
   line-height: 2.5;
-  margin: auto;
-  width: 50%;
 }
 
 #introduction{
@@ -41,15 +39,11 @@
 #intro{
   font-weight: 500;
   line-height: 2.5;
-  margin: auto;
-  width: 70%;
 }
 
 #skills{
   font-weight: 500;
   line-height: 2.5;
-  margin: auto;
-  width: 70%;
 }
 
 .linkedin{
@@ -58,6 +52,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 3%; 
+
+}
+
+header {
+  background-color: #ff44c4;
+  padding: 10px; /* Adds a 10px inner spacing to all sides */
+  padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
+  padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
 
 }
 
@@ -107,4 +111,9 @@ a:hover {
 .EmailButton:hover {
   background-color: #998249;
   color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
 }
