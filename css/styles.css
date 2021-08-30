@@ -56,7 +56,7 @@
 }
 
 header {
-  background-color: #ff44c4;
+  background-color: #9e917b;
   padding: 10px; /* Adds a 10px inner spacing to all sides */
   padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
   padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
@@ -81,7 +81,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #b48e26;
+  color: #855a0a;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
