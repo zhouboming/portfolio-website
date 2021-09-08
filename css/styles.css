@@ -39,6 +39,12 @@ nav > ul > li > a {
   line-height: 1.5;
 }
 
+.ArtCallBody{
+  font-family:"Raleway", Raleway, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 .homeheader{
   font-weight: 500;
   line-height: 2.5;
@@ -210,4 +216,12 @@ X-large devices (1440px or larger)
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+.name{
+  display:inline-block;
+}
+
+.abouttitle{
+  display:inline-block;
 }
