@@ -9,6 +9,7 @@ nav > ul{
 
 nav > ul > li {
   display: inline-block;
+  min-width: 641px
 }
 
 nav > ul > li > a {
@@ -16,6 +17,19 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color:#ddc277;
+  min-width: 641px
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
 
 .center {
