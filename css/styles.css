@@ -12,14 +12,6 @@ nav > ul > li {
   min-width: 641px
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color:#ddc277;
-  min-width: 641px
-}
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -33,7 +25,6 @@ nav > ul > li > a {
 }
 
 .center {
-  
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -60,8 +51,21 @@ nav > ul > li > a {
 }
 
 .homeheader{
-  font-weight: 500;
-  line-height: 2.5;
+  display:flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.navbar {
+  margin-right: 0;
+  margin-left: auto; 
+}
+
+.navbar > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#ddc277;
 }
 
 #introduction{
@@ -164,16 +168,18 @@ svg{
   height: auto;
 }
 
+.icon {
+  display:none;
+  }
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+@media only screen and (max-width: 640px) {
+  .icon {
+    display:inline;
   }
 
-  nav {
+  .navbar {
     width: auto;
     float: right;
     margin-top: 4px;
@@ -192,6 +198,10 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
+  }
+
+  .navbar > a:not(:last-child){
+    display:none;
   }
 }
 /* ==============================
