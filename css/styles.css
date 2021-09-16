@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
 nav > ul{
   list-style: none;
   padding: 0;
@@ -16,8 +21,20 @@ nav > ul > li {
   min-width: 641px
 }
 
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
 .navtoggle li:not(:last-child) {
@@ -35,6 +52,20 @@ nav > ul > li {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
+/*hamburger menu------------------------------*/
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
