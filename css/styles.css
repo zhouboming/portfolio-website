@@ -18,6 +18,8 @@ main {
 
 nav > ul > li {
   display: inline-block;
+  list-style-type: none;
+  padding: 0;
   min-width: 641px
 }
 
@@ -35,22 +37,6 @@ nav > ul > li > a {
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
-}
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navtoggle li:last-child {
-  display: none;
-}
-
-.navtoggle.responsive li  {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
 }
 
 /*hamburger menu------------------------------*/
@@ -237,6 +223,11 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  
+  nav > ul > li {
+    display: inline-block;
+    position: relative;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -255,6 +246,14 @@ Medium devices (640px and larger)
 
   .navbar > a:not(:last-child){
     display:none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 /* ==============================
