@@ -34,7 +34,7 @@ nav > ul > li > a {
 
 /*hamburger menu------------------------------*/
 
-.navtoggle a .icon {
+.navtoggle li > a > .icon {
   position: absolute;
   right: 0;
   top: 2px;
@@ -200,14 +200,21 @@ svg{
   height: auto;
 }
 
-.icon {
-  display:none;
-  }
+.icon{
+  max-width: 50%;
+  max-height: 50%;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  .icon {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  li > a > .icon {
     display:inline;
   }
 
@@ -235,10 +242,6 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
-  }
-
-  .navbar li> a:not(:last-child){
-    display:none;
   }
 
   .navtoggle li:not(:last-child) {
