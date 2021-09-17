@@ -16,13 +16,6 @@ main {
   padding-top: 56px;
 }
 
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-  min-width: 641px
-}
-
 nav > ul > li > a {
   display: inline-block;
   padding: 0 15px;
@@ -41,7 +34,7 @@ nav > ul > li > a {
 
 /*hamburger menu------------------------------*/
 
-.navtoggle li .icon {
+.navtoggle a .icon {
   position: absolute;
   right: 0;
   top: 2px;
@@ -52,13 +45,13 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li > a:last-child  {
   padding: 0 0 10px;
 }
 
@@ -99,7 +92,7 @@ nav > ul > li > a {
   margin-left: auto; 
 }
 
-.navbar > a {
+.navbar > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -158,11 +151,11 @@ img{
   max-height:100%;
 }
 
-a {
+li > a {
   color: #ddc277;
   text-decoration: none; /* No underlining */
 }
-a:hover {
+li > a:hover {
   color: #855a0a;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
@@ -213,7 +206,7 @@ svg{
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
   .icon {
     display:inline;
   }
@@ -244,7 +237,7 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  .navbar > a:not(:last-child){
+  .navbar li> a:not(:last-child){
     display:none;
   }
 
