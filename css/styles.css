@@ -2,100 +2,10 @@
   box-sizing: border-box;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-nav > ul{
-  list-style: none;
-  padding: 0;
-}
-
-main {
-  padding-top: 56px;
-}
-
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li > a {
-  display: inline-block;
-  padding: 0 15px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-/*hamburger menu------------------------------*/
-
-.navtoggle li > a > .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
+header {
+  background-color: #f8e7c0;
+  text-align: center;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li > a:last-child  {
-  padding: 0 0 10px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 3%;  
-}
-
-.HomeBody{
-  font-family:"Raleway", Raleway, sans-serif;
-  font-weight: 500;
-  line-height: 1.5;
-  font-size:18px;
-}
-
-.AboutBody{
-  font-family:"Raleway", Raleway, sans-serif;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.ArtCallBody{
-  font-family:"Raleway", Raleway, sans-serif;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.homeheader{
-  display:flex;
-  justify-content: flex-end;
-  height: 60px;
-}
-
-.navbar {
-  margin-right: 0;
-  margin-left: auto; 
 }
 
 .navbar > li > a {
@@ -105,51 +15,37 @@ nav > ul > li > a {
   color:#ddc277;
 }
 
-#introduction{
+.name {
+  max-width: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.5em;
+}
+
+.HomeBody{
+  font-family:"Raleway", Raleway, sans-serif;
   font-weight: 500;
-  line-height: 2.5;
-  margin: auto;
-  width: 50%;
+  line-height: 1.5;
+  font-size:18px;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #hero{
   text-align: center; 
-}
-
-#intro{
-  font-weight: 500;
-  line-height: 2.5;
-}
-
-#skills{
-  font-weight: 500;
-  line-height: 2.5;
+  font-size: 20px;
 }
 
 .linkedin{
-
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 3%; 
-
-}
-
-header {
-  background-color: #9e917b;
-  padding: 10px; /* Adds a 10px inner spacing to all sides */
-  padding: 10px 5px; /* Adds 10px to top & bottom and 5px to left and right */
-  padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
-
-}
-
-.profile{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 13%; 
 }
 
 img{
@@ -157,13 +53,10 @@ img{
   max-height:100%;
 }
 
-li > a {
-  color: #ddc277;
-  text-decoration: none; /* No underlining */
-}
-li > a:hover {
-  color: #855a0a;
-  text-decoration: underline; /* Underlining when hovering over a link */
+svg{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .ResumeButton {
@@ -195,47 +88,84 @@ li > a:hover {
   color: #ffffff;
 }
 
-/* Layout styling */
-.container {
-  padding: 0 15px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-svg{
+nav {
+  display: inline-block;
   width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
-.icon{
-  max-width: 50%;
-  max-height: 50%;
+nav > ul {
+  list-style-type: none;
+  padding: 0;
 }
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
 
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* our hamburger menu------------------------ */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+/* === Medium Devices (641px and larger) ================== */
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
-  li > a > .icon {
-    display:inline;
-  }
-
-  .navbar {
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  
+
   nav > ul > li {
     display: inline-block;
     position: relative;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
@@ -253,23 +183,6 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-  
-  .navtoggle li:last-child {
-    display: none;
-  }
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
 }
 
 @keyframes color-change {
@@ -307,10 +220,3 @@ X-large devices (1440px or larger)
   animation-timing-function: linear;
 }
 
-.name{
-  display:inline-block;
-}
-
-.abouttitle{
-  display:inline-block;
-}

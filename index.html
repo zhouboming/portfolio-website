@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Boming Zhou's Website</title>
-        <link rel="stylesheet" href="CSS/styles.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Boming Zhou's Website</title>
+	<script src="https://kit.fontawesome.com/01b7c8dea1.js" crossorigin="anonymous">
 
-    <body class="HomeBody">
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <header class="homeheader">
-                    <a class="name" href="index.html">Boming Zhou</a>
-                        <div class="navbar">
-                            <li><a href="index.html">Work</a></li>
-                            <li><a href="about.html" target="_self">About</a></li>
-                            <li>
-                                <a href="#contact" onclick="menuToggle()">Contact</a>
-                            </li>
-                            <li>
-                            <a href="javascript:void(0);" onclick="menuToggle()"><img src="img/menu.png" class="icon"></a>
-                            </li>
-                         </div>
-                </header>
-            </div>
-        </div>
-        
+	</script>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <br />
+<body class="HomeBody">
+	<!--Header-->
+	<header>
+		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+				<a class="name" href="index.html">Boming Zhou</a>
+				<nav class="navbar">
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="files/ZhouBomingResume.pdf">Resume</a></li>
+						<li><a href="#">Contact</a></li>
+						<li>
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--End Header-->
+
+  <br />
         <br />
 
         <div>
@@ -38,7 +45,8 @@
                 </p>
             </div>
         </div>
-
+				<br />
+        <br />
         <main>
             <div class="container">
             <div class="row">
@@ -1009,8 +1017,7 @@
         </main>
         <br />
         <br />
-        <br />
-        <br />
+
 
         <footer id="contact">
             <div class="container">
@@ -1030,8 +1037,11 @@
             </div>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous">
+	</script>
+	<script src="js/scripts.js">
+	</script>
+</body>
 
-    </body>
 </html>
