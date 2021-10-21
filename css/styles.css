@@ -99,7 +99,6 @@ svg {
 
 nav {
   display: inline-block;
-  width: 100%;
 }
 
 nav>ul {
@@ -139,6 +138,7 @@ nav>ul>li>a {
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
+  width: 100%;
 }
 
 .navtoggle.responsive li {
